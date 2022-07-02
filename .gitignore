@@ -1,0 +1,9 @@
+# 文件夹
+.github
+.cache
+.temp
+node_modules
+other
+
+# 文件
+pnpm-lock.yaml
