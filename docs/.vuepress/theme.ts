@@ -28,6 +28,15 @@ export default hopeTheme({
 
   displayFooter: true,
 
+  contributors: false,
+
+  // 添加主题颜色
+  // 默认有一个绿色主题
+  themeColor: {
+    blue: "#2196f3",
+    orange: "#fb9b5f",
+  },
+
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
