@@ -33,10 +33,29 @@ category: 随笔
 
 首先简单地介绍一下本博客吧。
 
-本博客用到的博客框架是 [VuePress](https://v2.vuepress.vuejs.org/zh/)，这是一个由 [Vue](https://staging-cn.vuejs.org/) 驱动的静态网站生成器。而我这里用到的是 [vuepress-theme-hope](https://vuepress-theme-hope.github.io/v2/zh/)，基于 [VuePress](https://v2.vuepress.vuejs.org/zh/) 开发的博客主题。
+本博客内容使用 Markdown 编写，图片通过 [PicGo](https://picgo.github.io/PicGo-Doc/zh/) 存放在阿里云的[对象存储 OSS](https://cn.aliyun.com/) 中，通过 [VuePress](https://v2.vuepress.vuejs.org/zh/) 博客框架转换为网页。博客存放于 Github 并通过 Github Actions 实现博客自动部署和同步 Gitee。
 
-线上部署的话，我一开始用的是 Gitee Pages，但是它的缺点是它不能免费自动部署，也就是说你每次提交更新以后还需要去 Gitee Pages 中手动刷新（被 Gitee 坑死了😅）。所以我后面还是选择了 Github Pages，通过 Github Actions 实现博客自动部署和同步 Gitee，这样的话既能保证国内的访问速度，也可以不用手动刷新。
+Markdown 是一种轻量级标记语言，可以简单地通过英文字符来控制文字格式。写 Markdown 的软件我用的是 [Typora](https://typora.io/)，一款简洁优雅的软件。
+
+Markdown 并不存放图片，实际上存放的是图片的链接地址，不像 Word 之类的将整个图片都作为文档的一部分。一直以来我写 Markdown 文档都是在本地写的，图片的话也就存在本地，但是需要文档上传以后，如何提交图片就比较麻烦。
+
+我想过的解决方法有 4 种：
+
+1. 将图片放在博客的目录下，用相对路径访问。
+2. 单独建立 Github 仓库，访问网页链接。
+3. 使用图床，访问网页链接。
+4. 直接买服务器，一步到位。
+
+最终我还是选择了方法 3，通过阿里云的对象存储 OSS 搭建了搭建了个人图床，然后使用 PicGo 来上传图片。
+
+本博客用到的博客框架是 [VuePress](https://v2.vuepress.vuejs.org/zh/) ，这是一个由 [Vue](https://staging-cn.vuejs.org/) 开发的静态网站生成器。而我这里用的是基于 [VuePress](https://v2.vuepress.vuejs.org/zh/) 开发的博客主题 [vuepress-theme-hope](https://vuepress-theme-hope.github.io/v2/zh/)。
+
+线上部署的话，我一开始用的是 Gitee Pages，但是它的缺点是它不能免费自动部署，也就是说你每次提交更新以后还在 Gitee Pages 中手动刷新（被 Gitee 坑死了😅）。所以我后面还是选择了 Github Pages，通过 Github Actions 可以实现博客自动部署和同步 Gitee，这样的话既能保证国内的访问速度，也可以不用手动刷新。
 
 如果想要了解详细的配置流程，或者说也想搭建一个一样的网页的话，可以参考一下我的配置过程。
 
 （配置流程努力编写中……✨）
+
+最后我思考了一下，我一路上配置了这么多还不如直接买一台云服务器方便。
+
+算了且看且行……
