@@ -1,6 +1,6 @@
 ---
 title: 为什么写博客？
-description: 介绍一下博客的动机。
+description: 介绍一下博客的动机
 author: 夜尽知天明
 date: 2022-07-01
 category: 随笔
