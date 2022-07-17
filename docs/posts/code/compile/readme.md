@@ -2,7 +2,7 @@
 title: 编译
 index: false
 article: false
-category: 目录
+category: 编译
 tag: 目录
 ---
 

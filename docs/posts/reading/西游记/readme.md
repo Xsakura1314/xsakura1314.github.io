@@ -1,8 +1,7 @@
 ---
 title: 西游记
 index: false
-article: true
-description: 西游记目录
+article: false
 category: 
     - 阅读
     - 西游记
