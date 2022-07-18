@@ -10,6 +10,7 @@ export default sidebar([
       {
         text: "数据库",
         prefix: "database/",
+        collapsable: true,
         children: "structure"
       }
     ]

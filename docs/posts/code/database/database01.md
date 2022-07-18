@@ -17,7 +17,7 @@ category: 数据库
 
 根据数据库中数据的组织结构可以分为三类数据库：
 
-* 导航行（navigationnal）
+* 导航型（navigationnal）
 * 关系型（relational）
 * 后关系型（post-relational）
 
